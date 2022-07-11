@@ -1,0 +1,85 @@
+//LAYOUTS
+
+//block
+@mixin block($align:null) {
+    display: block;
+    align-content: $align;
+}
+
+//flex
+@mixin flex ($dis:flex, $just:flex-start, $alig: null, $dir:row) {
+    display: $dis;
+    justify-content: $just;
+    align-items: $alig;
+    flex-direction: $dir;
+}
+
+
+
+//GENERAL STYLING
+
+//main background generator
+@mixin m-bg() {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@mixin radius($radius:2rem, $top-left:null, $top-right:null, $bt-left:null, $bt-right:null) {
+    border-radius: $radius;
+    border-top-left-radius: $top-left;
+    border-top-right-radius: $top-right;
+    border-bottom-left-radius: $bt-left;
+    border-bottom-right-radius: $bt-right;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+//input focus
+
+//measures
+@mixin frame4($w:null, $h:null, $m:null, $p:null) {
+    width: $w;
+    height: $h;
+    margin: $m;
+    padding: $p;
+
+}
+
+
+
+
+//border
+
+
+
+
+//MEDIA QUERIES
+
+@mixin phone {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin tablet-up {
+    @media (max-width: 700px) {
+        @content;
+    }
+}
+
+
+@mixin desktop {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xl-desktop {
+    @media (max-width: 1800px) {
+        @content;
+    }
+}

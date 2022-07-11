@@ -7,13 +7,19 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@ashwamegh/vue-link-preview": "^0.2.5",
     "core-js": "^3.8.3",
+    "date-fns": "^2.28.0",
+    "firebase": "^9.8.1",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.3",
+    "vue-use-sound": "^1.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-service": "~5.0.0"
+    "@vue/cli-service": "~5.0.0",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2"
   }
 }

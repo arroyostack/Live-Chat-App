@@ -1,0 +1,24 @@
+@import '/scss/mixins.scss';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* thus 1rem will be 10px */
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.error {
+  color: #ff3f80;
+  font-size: 1.4rem;
+}
+
