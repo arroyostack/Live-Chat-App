@@ -1,4 +1,4 @@
-@import '/scss/mixins.scss';
+
 
 *,
 *::after,
@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 html {
-  /* thus 1rem will be 10px */
   font-size: 62.5%;
   min-height: 100vh;
 }

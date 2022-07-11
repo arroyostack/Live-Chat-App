@@ -7,7 +7,6 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@ashwamegh/vue-link-preview": "^0.2.5",
     "core-js": "^3.8.3",
     "date-fns": "^2.28.0",
     "firebase": "^9.8.1",
