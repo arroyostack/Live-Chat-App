@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Welcome from '../views/Welcome.vue'
 import ChatRoom from '../views/ChatRoom.vue'
+import MsgError from '../views/MsgError.vue'
 import { projectAuth } from '../firebase/config'
 
 //auth guard
@@ -46,6 +47,12 @@ const routes = [
     component: ChatRoom,
     // 'beforeEnter' runs 'requireAuth' function before conecting to this route
     beforeEnter: requireAuth
+  },
+  ,
+  {
+    path: '/*',
+    name: 'error',
+    component: MsgError
   }
   
 ]
